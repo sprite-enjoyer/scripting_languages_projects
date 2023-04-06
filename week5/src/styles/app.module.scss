@@ -1,0 +1,40 @@
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: 0;
+  padding: 0;
+
+}
+
+.summary-div {
+  width: 600px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  box-shadow: 2px 2px 20px 1px rgb(185, 185, 185);
+  border-radius: 20px;
+  font-size: 1.5em;
+  padding-top: 20px;
+
+
+  &__reload-btn {
+    background-color: rgb(154, 87, 202);
+    width: 100%;
+    border: none;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    height: 60px;
+    cursor: pointer;
+    color: white;
+    margin-top: auto;
+    font-size: 1em;
+
+  }
+}

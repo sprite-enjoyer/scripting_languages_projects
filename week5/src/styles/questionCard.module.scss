@@ -1,0 +1,58 @@
+$padding-property: 5px 50px 0 50px;
+$border-bottom-radius-property: 20px;
+
+.main {
+  width: 600px;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 20px;
+  box-shadow: 2px 2px 20px 1px rgb(185, 185, 185);
+  font-size: 1.5em;
+
+  &>* {
+    width: 100%;
+  }
+}
+
+.question {
+  box-sizing: border-box;
+  flex: 6 6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: $padding-property;
+  font-weight: 600;
+}
+
+.choices {
+  box-sizing: border-box;
+  margin: 0;
+  border: none;
+  flex: 10 10;
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  padding: $padding-property;
+  padding-bottom: 50px;
+
+
+  &__label {}
+
+  &__choice {}
+
+  &__text {
+    margin-left: 10px;
+  }
+}
+
+.btn {
+  flex: 3 3;
+  background-color: rgb(154, 87, 202);
+  border-bottom-left-radius: $border-bottom-radius-property;
+  border-bottom-right-radius: $border-bottom-radius-property;
+  border: none;
+  cursor: pointer;
+  color: white;
+  font-size: 1em;
+}
